@@ -2,24 +2,31 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import sand from '../../../assets/sand-bg.jpg';
 import avatar from '../../../assets/avatar.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './ProfileNavbar.scss';
 
-export const ProfileNavbar = () => {
+export const ProfileNavbar = (props) => {
     return (
-        <div className="profile-navbar__container">
-            <img className="profile-navbar__background" src={sand} alt="sandy background" /> 
-            <nav className="profile-navbar__nav" >
-                <img className="profile-navbar__avatar" src={avatar} alt="avatar" />
-                <li>
-                    <NavLink exact to={`/`}>
-                        About
+        <div className="profilenavbar-container">
+            <img className="profilenavbar-background" src={sand} alt="sandy background" /> 
+            <nav className="profilenavbar-nav">
+                <img className="profilenavbar-nav__avatar" src={avatar} alt="avatar" />
+                <div className="profilenavbar-nav__switchers">
+                    <NavLink exact to="/" className='button-nav'>
+                        <FontAwesomeIcon
+                            icon="user"
+                            color="#fff"
+                            size="lg"
+                        />
                     </NavLink>
-                </li>
-                <li>
-                    <NavLink exact to={`/gallery`}>
-                        Gallery
+                    <NavLink exact to="/gallery" onClick={props.switchToFalse} className='button-nav'>
+                        <FontAwesomeIcon
+                            icon="image"
+                            color="#fff"
+                            size="lg"
+                        />
                     </NavLink>
-                </li>
+                </div>
             </nav>
         </div>
     );

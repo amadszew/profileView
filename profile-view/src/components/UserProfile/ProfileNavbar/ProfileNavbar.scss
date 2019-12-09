@@ -1,10 +1,10 @@
-.profile-navbar {
-    &__background {
+.profilenavbar {
+    &-background {
         max-width: 100%;
         width: 100%;
         margin: 0;
     }
-    &__nav {
+    &-nav {
         height: 60px;
         display: flex;
         justify-content: flex-end;
@@ -16,27 +16,26 @@
         background: #7AD6BB;
         margin-top: -4px;
         position: relative;
-        li {
-            margin-right: 10px;
-            a {
-                text-decoration: none;
-                color: #000;
-                &:hover {
-                    color: #fff;
+        &__avatar {
+            position: absolute;
+            top: -50px;
+            left: 20px;
+            max-width: 126px;
+            width: 100%;
+            height: 126px;
+            border: 8px solid rgba(250, 250, 250, .6);
+            border-radius: 500px;
+            -webkit-border-radius: 500px;
+            -moz-border-radius: 500px;
+        }
+        &__switchers {
+            display: flex;
+            align-items: center;
+            .button-nav {
+                &:first-child {
+                    margin-right: 30px;
                 }
             }
         }
-    }
-    &__avatar {
-        position: absolute;
-        top: -50px;
-        left: 20px;
-        max-width: 126px;
-        width: 100%;
-        height: 126px;
-        border: 8px solid rgba(250, 250, 250, .6);
-        border-radius: 500px;
-        -webkit-border-radius: 500px;
-        -moz-border-radius: 500px;
     }
 }
