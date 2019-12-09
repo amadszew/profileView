@@ -1,0 +1,12 @@
+.user-profile {
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        background: #fff;
+        margin: 40px auto 0;
+        border: 1px solid #ccc;
+    }
+    &__displayer {
+        padding: 40px 15px;
+    }
+}
