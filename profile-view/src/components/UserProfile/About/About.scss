@@ -1,0 +1,41 @@
+.about {
+    &-container {
+        background: #fff;
+        width: 100%;
+        color: #000;
+    }
+    &-header {
+        &__name {
+            font-weight: 800;
+            font-size: 26px;
+            letter-spacing: -.8px;
+            margin: 0;
+        }
+        &__address {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-right: 10px;
+            }
+            p {
+                margin: 0;
+                color: #828282;
+                opacity: .9;
+            }
+        }
+    }
+    &-text {
+        margin-top: 30px;
+        &__first {
+            margin-bottom: 40px;
+        }
+        &__quote {
+            padding-left: 30px;
+            border-left: 4px solid #7AD6BB;
+            margin-bottom: 40px;
+            color: #ccc;
+            font-style: italic;
+            font-size: 18px;
+        }
+    }
+}
