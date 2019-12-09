@@ -17,7 +17,6 @@ class About extends Component {
                             <FontAwesomeIcon
                                 icon="map-marker-alt"
                                 color="#828282"
-                                size="md"
                             />
                             <p>
                                 {param.city}, {param.country}

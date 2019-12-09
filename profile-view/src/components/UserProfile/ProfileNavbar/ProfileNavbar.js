@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import sand from '../../../assets/sand-bg.png';
-import avatar from '../../../assets/avatar.png';
+import sand from '../../../assets/sand-bg.jpg';
+import avatar from '../../../assets/avatar.jpg';
 import './ProfileNavbar.scss';
 
 export const ProfileNavbar = () => {
