@@ -11,19 +11,17 @@ export const ProfileNavbar = (props) => {
             <img className="profilenavbar-background" src={sand} alt="sandy background" /> 
             <nav className="profilenavbar-nav">
                 <img className="profilenavbar-nav__avatar" src={avatar} alt="avatar" />
-                <div className="profilenavbar-nav__switchers">
-                    <NavLink exact to="/" className='button-nav'>
+                <div className="profilenavbar-nav__buttons">
+                    <NavLink className="button-nav" exact to='/'>
                         <FontAwesomeIcon
                             icon="user"
                             color="#fff"
-                            size="lg"
                         />
                     </NavLink>
-                    <NavLink exact to="/gallery" onClick={props.switchToFalse} className='button-nav'>
+                    <NavLink className="button-nav" to='/gallery'>
                         <FontAwesomeIcon
                             icon="image"
                             color="#fff"
-                            size="lg"
                         />
                     </NavLink>
                 </div>

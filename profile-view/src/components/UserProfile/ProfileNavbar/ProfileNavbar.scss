@@ -8,7 +8,6 @@
         height: 60px;
         display: flex;
         justify-content: flex-end;
-        list-style-type: none;
         align-items: center;
         padding: 0 40px;
         margin: 0;
@@ -19,7 +18,7 @@
         &__avatar {
             position: absolute;
             top: -50px;
-            left: 20px;
+            left: 45px;
             max-width: 126px;
             width: 100%;
             height: 126px;
@@ -28,12 +27,27 @@
             -webkit-border-radius: 500px;
             -moz-border-radius: 500px;
         }
-        &__switchers {
+        &__buttons {
             display: flex;
             align-items: center;
             .button-nav {
+                width: 35px;
+                height: 35px;
+                border: 1.5px solid transparent;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: .9;
+                transition: border-color .3s ease-in-out, opacity .1s ease-in-out;
                 &:first-child {
                     margin-right: 30px;
+                }
+                &.active {
+                    border-color: #fff;
+                }
+                &:hover {
+                    opacity: 1;
                 }
             }
         }
