@@ -6,7 +6,6 @@ import './About.scss';
 class About extends Component {
 
     render() {
-        console.log(this.props)
         const { profiles } = this.props;
         const profileList = profiles.map((param, index) => {
             return (
