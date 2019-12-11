@@ -5,9 +5,25 @@
         background: #fff;
         margin: 40px auto 100px;
         border: 1px solid #ccc;
+        box-sizing: border-box;
     }
     &__displayer {
         padding: 60px 40px 40px;
         height: 570px;
+    }
+}
+
+@media(max-width: 880px) {
+    .user-profile {
+        &__displayer {
+            height: auto;
+        }
+    }
+}
+@media(max-width: 500px) {
+    .user-profile {
+        &__container {
+            border: none;
+        }
     }
 }
