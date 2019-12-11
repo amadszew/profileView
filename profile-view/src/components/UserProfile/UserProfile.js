@@ -26,7 +26,7 @@ class UserProfile extends Component  {
                 console.log(srcPath)
                 return (
                      <div key={index} className="gallery-box">
-                        <a href={srcPath} target="_blank" className="gallery-box__picture">
+                        <a href={srcPath} rel="noopener noreferrer" target="_blank" className="gallery-box__picture">
                             <img alt='marilyn' src={srcPath} />
                         </a>
                      </div>
